@@ -1,10 +1,10 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2019 Zen Cart Development Team
+ * @copyright Copyright 2003-2020 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: product.php for pdf attachment 2019-11-09 14:49:16Z webchills $
+ * @version $Id: product.php for pdf attachment 2020-02-06 17:49:16Z webchills $
  */
 
 
@@ -30,7 +30,7 @@ define('TEXT_PRODUCTS_MANUFACTURER', 'Products Manufacturer:');
 define('TEXT_PRODUCTS_NAME', 'Products Name:');
 define('TEXT_PRODUCTS_DESCRIPTION', 'Products Description:');
 define('TEXT_PRODUCTS_QUANTITY', 'Products Quantity:');
-define('TEXT_PRODUCTS_MODEL', 'Products Model:');
+
 define('TEXT_PRODUCTS_IMAGE', 'Products Image:');
 define('TEXT_IMAGE_NONEXISTENT', 'Image does not exist');
 define('TEXT_PRODUCTS_IMAGE_DIR', 'Upload to directory:');

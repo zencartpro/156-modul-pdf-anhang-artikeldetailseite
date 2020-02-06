@@ -1,10 +1,11 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2019 Zen Cart Development Team
+ *Zen Cart German Specific
+ * @copyright Copyright 2003-2020 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: product.php for pdf attachment 2019-11-09 14:58:04Z webchills $
+ * @version $Id: product.php for pdf attachment 2020-02-06 17:58:04Z webchills $
  */
 
 
@@ -20,17 +21,17 @@ define('TEXT_PRODUCT_NOT_VIRTUAL', 'Nein, Versandadresse ist notwendig');
 define('TEXT_PRODUCT_IS_ALWAYS_FREE_SHIPPING', 'Ja, immer versandkostenfrei');
 define('TEXT_PRODUCT_NOT_ALWAYS_FREE_SHIPPING', 'Nein, normale Versandkosten gelten');
 define('TEXT_PRODUCT_SPECIAL_ALWAYS_FREE_SHIPPING', 'Sonderangebote, Artikel/Download benötigt eine Lieferadresse');
-
 define('TEXT_PRODUCTS_QTY_BOX_STATUS_ON', 'Ja, zeige Mengeneingabefeld für Stückzahl');
 define('TEXT_PRODUCTS_QTY_BOX_STATUS_OFF', 'Nein, zeige kein Mengeneingabefeld für Stückzahl');
 define('TEXT_PRODUCTS_QTY_BOX_STATUS_EDIT', 'Warnung: Mengeneingabefeld wird nicht gezeigt, Menge 1 ist voreingestellt');
 define('TEXT_PRODUCTS_QTY_BOX_STATUS_PREVIEW', 'Warnung: Mengeneingabefeld wird nicht angezeigt, Menge 1 wird voreingestellt');
+
 define('TEXT_PRODUCTS_MANUFACTURER', 'Artikelhersteller:');
 define('TEXT_PRODUCTS_NAME', 'Artikelname:');
 define('TEXT_PRODUCTS_MERKMALE', 'Merkmale für Buttonlösung:');
 define('TEXT_PRODUCTS_DESCRIPTION', 'Artikelbeschreibung:');
 define('TEXT_PRODUCTS_QUANTITY', 'Lagerbestand:');
-define('TEXT_PRODUCTS_MODEL', 'Artikelnummer:');
+
 define('TEXT_PRODUCTS_IMAGE', 'Artikelbild:');
 define('TEXT_IMAGE_NONEXISTENT', 'Bild existiert nicht');
 define('TEXT_PRODUCTS_IMAGE_DIR', 'Uploadverzeichnis:');
