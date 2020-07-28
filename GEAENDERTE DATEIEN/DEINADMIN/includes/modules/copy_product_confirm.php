@@ -5,7 +5,7 @@
  * @copyright Copyright 2003-2020 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: copy_product_confirm.php for pdf attachment 2020-07-24 16:36:16Z webchills $
+ * @version $Id: copy_product_confirm.php for pdf attachment 2020-07-28 16:27:16Z webchills $
  */
 if (!defined('IS_ADMIN_FLAG')) {
   die('Illegal Access');
@@ -34,7 +34,7 @@ if (isset($_POST['products_id']) && isset($_POST['categories_id'])) {
     }
   } elseif ($_POST['copy_as'] == 'duplicate') {
     $old_products_id = (int)$products_id;
-    $product = $db->Execute("SELECT products_type, products_quantity, products_model, products_image,
+    $product = $db->Execute("SELECT products_type, products_quantity, products_model, products_image, products_pdf_attachment, 
                                     products_price, products_virtual, products_date_available, products_weight,
                                     products_tax_class_id, manufacturers_id,
                                     products_quantity_order_min, products_quantity_order_units, products_priced_by_attribute,
@@ -105,7 +105,7 @@ if (isset($_POST['products_id']) && isset($_POST['categories_id'])) {
                                   WHERE products_id = " . (int)$products_id);
     foreach ($descriptions as $description) {
       $db->Execute("INSERT INTO " . TABLE_PRODUCTS_DESCRIPTION . " (products_id, language_id, products_name, pdf_attachment_name, products_merkmale, products_description, products_url, products_viewed)
-                    VALUES ('" . $dup_products_id . "',
+                    VALUES ('" . (int)$dup_products_id . "',
                             '" . (int)$description['language_id'] . "',
                             '" . zen_db_input($description['products_name']) . "',
                             '" . zen_db_input($description['pdf_attachment_name']) . "',
